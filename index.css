@@ -1,9 +1,36 @@
+/*ЭТО БЛОБ*/
+section{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+
+}
+.blob1{
+    position: absolute;
+    top: -1230px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+
+}
+.blob2{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 600px;
+    height: 600px;
+
+}
+/*ОСНОВНОЕ*/
 body {
     /*font-family: Centery Gothic;*/
     font-size: 14pt;
-    background-image: url(bg1.png);
-    background-size: auto;
-    background-attachment:fixed;
+    background: linear-gradient(#C8E2E7, #4199CA);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1920px;
   }
   .all_items{
     display: flex;
