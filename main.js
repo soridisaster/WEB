@@ -10,3 +10,10 @@ window.addEventListener('scroll', function() {
       }
   }
 );
+
+
+//ДЛЯ НЕ АВТОРИЗОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ
+function no_auth()
+{
+alert('Вам не доступен этот раздел, пожалуйста, авторизуйтесь!');
+}

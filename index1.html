@@ -29,12 +29,12 @@
                     двух послеоперационных периодов. А также по окончанию каждого этапа пройти тест, тем самым поможете сделать 
                     нашу статистику более точной.
                 </p>
-                <!--кнопки разделы-->
+                <!--кнопки разделы--><!--
                 <div class="dots">
                     <div ><a class="dot" href="#one">1</a></div>
                     <div ><a class="dot" href="#two">2</a></div>
                     <div ><a class="dot" href="#three">3</a></div>
-                </div>
+                </div>-->
                 <!--ДООПЕРАЦИОННЫЙ ПЕРИОД-->
                 <a id="one"></a>
                 <p class="head_text">Дооперационный период </p>
@@ -81,7 +81,7 @@
                 
                 
                 <!--ТЕСТ для сатистики в выпадающем списке по кнопке-->
-                <p class="regular_text">Тут вставь тестик</p>
+                <p class="regular_text">Пожалуйста, пройдите тест для полной консультации и для нашей статистики.</p>
                  <!--ТЕСТ придумай вопросы-->
 
                 <div id="test">
@@ -89,43 +89,56 @@
                         <button class="button_test" onclick="(document.getElementById('testMain').style.display='block')">Пройти тест</button> 
                     </div>
                     <div id="testMain">
-                        <p>Пожалуйста, ответьте на вопросы, где "0" - информация была бесполезной, "1" - информация иногда была полезна, "2" - информация
-                            была очень полезна.
+                        
+                        <p class="nameq"> 1. Вам ранее делали операции любого рода? </p>
+                        <div class ="question">
+                            <div><input class="radio" type="radio" name="q1" id="q1_1" ><label class="form-check-label" for="q1_1">Да</label></div>
+                            <div><input class="radio" type="radio" name="q1" id="q1_2" ><label class="form-check-label" for="q1_2">Нет</label></div>
+                        </div>
+            
+                        <p class="nameq"> 2. Как давно Вам делали операцию? </p>
+                        <p>
+                            Если вы на предыдущий вопрос ответили "Нет", то пропустите этот вопрос.
                         </p>
-                        <p class="nameq"> 1. Насколько наша информация была вам полезна </p>
                         <div class ="question">
-                            <div><input type="radio" name="q1" id="q1_1" ><label class="form-check-label" for="q1_1">0</label></div>
-                            <div><input type="radio" name="q1" id="q1_2" ><label class="form-check-label" for="q1_2">1</label></div>
-                            <div><input type="radio" name="q1" id="q1_3" ><label class="form-check-label" for="q1_3">2</label></div>
+                            <div><input class="radio" type="radio" name="q2" id="q2_1" ><label class="form-check-label" for="q2_1">Менее года назад</label></div>
+                            <div><input class="radio" type="radio" name="q2" id="q2_2" ><label class="form-check-label" for="q2_2">1-3 года назад</label></div>
+                            <div><input class="radio" type="radio" name="q2" id="q2_3" ><label class="form-check-label" for="q2_3">Более чем 3 года назад</label></div>
+                        </div>
+                        <p class="nameq"> 3. На какую область вам делали операцию? </p>
+                        <p>
+                            Если вы на первый вопрос ответили "Нет", то пропустите этот вопрос.
+                        </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q3" id="q3_1" ><label class="form-check-label" for="q3_1">На органы грудной клетки</label></div>
+                            <div><input type="radio" name="q3" id="q3_2" ><label class="form-check-label" for="q3_2">На сердце</label></div>
+                            <div><input type="radio" name="q3" id="q3_3" ><label class="form-check-label" for="q3_3">Другое</label></div>
                         </div>
             
-                        <p class="nameq"> 2. Что такое акцент? </p>
+                        <p class="nameq"> 4. Переживали ли вы инсульт или же испытываете головокружение, потемнение в глазах? </p>
                         <div class ="question">
-                            <div><input type="radio" name="q2" id="q2_1" ><label class="form-check-label" for="q2_1">1. Это приёмы выделения</label></div>
-                            <div><input type="radio" name="q2" id="q2_2" ><label class="form-check-label" for="q2_2">2. Это содержание картины </label></div>
-                            <div><input type="radio" name="q2" id="q2_3" ><label class="form-check-label" for="q2_3">3. Это стиль рисования</label></div>
-                        </div>
-            
-                        <p class="nameq"> 3. В чем смысл акцентов? </p>
-                        <div class ="question">
-                            <div><input type="radio" name="q3" id="q3_1" ><label class="form-check-label" for="q3_1">1. Чтобы передать смысл картины</label></div>
-                            <div><input type="radio" name="q3" id="q3_2" ><label class="form-check-label" for="q3_2">2. Чтобы привлечь внимание зрителя</label></div>
-                            <div><input type="radio" name="q3" id="q3_3" ><label class="form-check-label" for="q3_3">3. Чтобы научиться лучше рисовать</label></div>
+                            <div><input type="radio" name="q4" id="q4_1" ><label class="form-check-label" for="q4_1">Да</label></div>
+                            <div><input type="radio" name="q4" id="q4_2" ><label class="form-check-label" for="q4_2">Нет</label></div>
                         </div>
             
             
-                        <p class="nameq"> 4. Что такое моделирующий свет? </p>
+                        <p class="nameq"> 5. Испытываете ли вы волнение перед операцией? </p>
                         <div class ="question">
-                            <div><input type="radio" name="q4" id="q4_1" ><label class="form-check-label" for="q4_1">1. Это свет для выделения боковых частей объекта</label></div>
-                            <div><input type="radio" name="q4" id="q4_2" ><label class="form-check-label" for="q4_2">2. Это свет для улучшения качества фото</label></div>
-                            <div><input type="radio" name="q4" id="q4_3" ><label class="form-check-label" for="q4_3">3. Это свет для выделения контура объекта</label></div>
+                            <div><input type="radio" name="q5" id="q5_1" ><label class="form-check-label" for="q5_1">Да</label></div>
+                            <div><input type="radio" name="q5" id="q5_2" ><label class="form-check-label" for="q5_2">Нет</label></div>
+                        </div>
+
+                        <p class="nameq"> 6. У вас остались вопросы по поводу операции? </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q6" id="q6_1" ><label class="form-check-label" for="q6_1">Да</label></div>
+                            <div><input type="radio" name="q6" id="q6_2" ><label class="form-check-label" for="q6_2">Нет</label></div>
                         </div>
             
-                        <p class="nameq"> 5. Сколько всего видов света? </p>
+                        <p class="nameq"> 7. Насколько информация на сайте была вам полезна? </p>
                         <div class ="question" id="question5">
-                            <input type="radio" name="q5" id="q5_1" ><label class="form-check-label" for="q5_1">1</label>
-                            <input type="radio" name="q5" id="q5_2" ><label class="form-check-label" for="q5_2">3</label>
-                            <input type="radio" name="q5" id="q5_3" ><label class="form-check-label" for="q5_3">5</label>
+                            <input type="radio" name="q7" id="q7_1" ><label class="form-check-label" for="q7_1">Была в большинстве полезна</label>
+                            <input type="radio" name="q7" id="q7_2" ><label class="form-check-label" for="q7_2">Была немного полезна</label>
+                            <input type="radio" name="q7" id="q7_3" ><label class="form-check-label" for="q7_3">Была бесполезна</label>
                         </div>
             
             
@@ -139,9 +152,157 @@
                 </div>
 
 
+                <!--ТЕСТ для сатистики в выпадающем списке по кнопке ТЕСТ ДЛЯ УСПОКОЕНИЯ-->
+                <p class="regular_text">Если вы испытываете волнение перед операцией, то пройдите следующий консультационный тест.</p>
+                 <!--ТЕСТ придумай вопросы-->
+
+                <div id="test">
+                    <div >
+                        <button class="button_test2" onclick="(document.getElementById('testMain2').style.display='block')">Пройти тест</button> 
+                    </div>
+                    <div id="testMain2">
+                        <p>
+                            Пожалуйста, оцените отношение утвержения к вам по шкале от -2 до 2, где -2 - не имеет кол мне отношения, 0 - не уверен или нейстрально, а 2 - утвержение описывает меня.
+                        </p>
+                        
+                        <p class="nameq2"> 1. Я доволен(-а) уровнем своей жизни </p>
+                        <div class ="question2">
+                            <div><input type="radio" name="q21" id="q21_1" ><label class="form-check-label" for="q21_1">2</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">0</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-2</label></div>
+                        </div>
+                        <p class="nameq2"> 2. У меня есть тот (те), кто может обо мне позаботиться </p>
+                        <div class ="question2">
+                            <div><input type="radio" name="q21" id="q21_1" ><label class="form-check-label" for="q21_1">2</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">0</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-2</label></div>
+                        </div>
+                        <p class="nameq2"> 3. Я всегда испытываю сильный стресс </p>
+                        <div class ="question2">
+                            <div><input type="radio" name="q21" id="q21_1" ><label class="form-check-label" for="q21_1">2</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">0</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-2</label></div>
+                        </div>
+                        <p class="nameq2"> 4. Я нервный человек</p>
+                        <div class ="question2">
+                            <div><input type="radio" name="q21" id="q21_1" ><label class="form-check-label" for="q21_1">2</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">0</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-2</label></div>
+                        </div>
+                        <p class="nameq2"> 5. Я легко могу поникнуть из-за пустяка </p>
+                        <div class ="question2">
+                            <div><input type="radio" name="q21" id="q21_1" ><label class="form-check-label" for="q21_1">2</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">0</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-2</label></div>
+                        </div>
+                        <p class="nameq2"> 6. Последние полгода я нормально не отдыхал(-а)</p>
+                        <div class ="question2">
+                            <div><input type="radio" name="q21" id="q21_1" ><label class="form-check-label" for="q21_1">2</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">0</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-1</label></div>
+                            <div><input type="radio" name="q21" id="q21_2" ><label class="form-check-label" for="q21_2">-2</label></div>
+                        </div>
+            
+                        
+                        <div id="button2">
+                            <button class="button_test" id="button2" onclick="summary();" >Завершить тест</button> 
+                        </div>
+                        <div id="str5"></div>
+                    </div>
+                
+                </div>
+
+
                 <!--ПЕРВАЯ НЕДЕЛЯ ПОСЛЕ ОПЕРАЦИИ-->
                 <a id="two"></a>
                 <p class="head_text">Первая неделя после операции</p>
+                <p class="regular_text">Поздравляем, Вы успешно прошли операцию, теперь вас ждут 4 недели восстановления. 
+                    Первая неделя самая тяжелая, поэтому не забудьте проверить себя на наличие тех или иных симптомов, которые должны и не должны быть.
+                </p>
+
+                <!--ТЕСТ для сатистики в выпадающем списке по кнопке-->
+                
+                <!--ТЕСТ придумай вопросы-->
+
+                <div id="test">
+                    <div >
+                        <button class="button_test" onclick="(document.getElementById('testMain').style.display='block')">Проверить симптомы</button> 
+                    </div>
+                    <div id="testMain">
+                        
+                        <p class="nameq"> 1. Вам ранее делали операции любого рода? </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q1" id="q1_1" ><label class="form-check-label" for="q1_1">Да</label></div>
+                            <div><input type="radio" name="q1" id="q1_2" ><label class="form-check-label" for="q1_2">Нет</label></div>
+                        </div>
+            
+                        <p class="nameq"> 2. Как давно Вам делали операцию? </p>
+                        <p>
+                            Если вы на предыдущий вопрос ответили "Нет", то пропустите этот вопрос.
+                        </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q2" id="q2_1" ><label class="form-check-label" for="q2_1">Менее года назад</label></div>
+                            <div><input type="radio" name="q2" id="q2_2" ><label class="form-check-label" for="q2_2">1-3 года назад</label></div>
+                            <div><input type="radio" name="q2" id="q2_3" ><label class="form-check-label" for="q2_3">Более чем 3 года назад</label></div>
+                        </div>
+                        <p class="nameq"> 3. На какую область вам делали операцию? </p>
+                        <p>
+                            Если вы на первый вопрос ответили "Нет", то пропустите этот вопрос.
+                        </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q3" id="q3_1" ><label class="form-check-label" for="q3_1">На органы грудной клетки</label></div>
+                            <div><input type="radio" name="q3" id="q3_2" ><label class="form-check-label" for="q3_2">На сердце</label></div>
+                            <div><input type="radio" name="q3" id="q3_3" ><label class="form-check-label" for="q3_3">Другое</label></div>
+                        </div>
+            
+                        <p class="nameq"> 4. Переживали ли вы инсульт или же испытываете головокружение, потемнение в глазах? </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q4" id="q4_1" ><label class="form-check-label" for="q4_1">Да</label></div>
+                            <div><input type="radio" name="q4" id="q4_2" ><label class="form-check-label" for="q4_2">Нет</label></div>
+                        </div>
+            
+            
+                        <p class="nameq"> 5. Испытываете ли вы волнение перед операцией? </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q5" id="q5_1" ><label class="form-check-label" for="q5_1">Да</label></div>
+                            <div><input type="radio" name="q5" id="q5_2" ><label class="form-check-label" for="q5_2">Нет</label></div>
+                        </div>
+
+                        <p class="nameq"> 6. У вас остались вопросы по поводу операции? </p>
+                        <div class ="question">
+                            <div><input type="radio" name="q6" id="q6_1" ><label class="form-check-label" for="q6_1">Да</label></div>
+                            <div><input type="radio" name="q6" id="q6_2" ><label class="form-check-label" for="q6_2">Нет</label></div>
+                        </div>
+            
+                        <p class="nameq"> 7. Насколько информация на сайте была вам полезна? </p>
+                        <div class ="question" id="question5">
+                            <input type="radio" name="q7" id="q7_1" ><label class="form-check-label" for="q7_1">Была в большинстве полезна</label>
+                            <input type="radio" name="q7" id="q7_2" ><label class="form-check-label" for="q7_2">Была немного полезна</label>
+                            <input type="radio" name="q7" id="q7_3" ><label class="form-check-label" for="q7_3">Была бесполезна</label>
+                        </div>
+            
+            
+                        <div id="button2">
+                            <button class="button_test" id="button2" onclick="summary();" >Завершить тест</button> 
+                        </div>
+                        <div id="str5"></div>
+                        
+                    </div>
+                
+                </div>
+
+
                 <div class="info_plain_all">
                     <div class="info_plain">
                         <p class="regular_text3">Какие симптомы могут быть</p>
@@ -160,7 +321,6 @@
                                 <p class="regular_text4">Документ номер один</p>
                             
                         </div>
-                        <p class="regular_text3">Если у вас проявились те или иные симптомы, то срочно обратитесь к вашему лечащему врачу</p>
                     </div>
                 </div>
                 
@@ -171,7 +331,11 @@
 
                 <!--ПЕРВЫЙ МЕСЯЦ ПОСЛЕ ОПЕРАЦИИ-->
                 <a id="three"></a>
-                <p class="head_text">Первая неделя после операции</p>
+                <p class="head_text">Первый месяц после операции</p>
+                <p class="regular_text">Поздравляем, Вы успешно прошли самый тяжелый этап, теперь у вас впереди 3 недели восстановления. 
+                    Пожалуйста, продолжайте отслеживать свое состояние и проходить наши тесты, для проверки симптомов.
+                </p>
+
                 <div class="info_plain_all">
                     <div class="info_plain">
                         <p class="regular_text3">Какие симптомы могут быть</p>
